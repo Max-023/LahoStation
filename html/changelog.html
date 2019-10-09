@@ -1,0 +1,1391 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>Halo: Space Station Evolved Changelog</title>
+  <link rel="stylesheet" type="text/css" href="changelog.css">
+  <base target="_blank" />
+  <script type='text/javascript'>
+  
+	function changeText(tagID, newText, linkTagID){
+		var tag = document.getElementById(tagID);
+		tag.innerHTML = newText;
+		var linkTag = document.getElementById(linkTagID);
+		linkTag.removeAttribute("href");
+		linkTag.removeAttribute("onclick");
+	}
+	
+  </script>  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body>
+<table align='center' width='650'><tr><td>
+<table align='center' class="top">
+	<tr>
+		<td valign='top'>
+			<div align='center'><font size='3'><b>Space Station 13</b></font></div>
+			
+			<p><div align='center'><font size='3'><a href="http://wiki.baystation12.net/">Wiki</a> | <a href="https://github.com/HaloSpaceStation/HaloSpaceStation13/">Source code</a></font></div></p>
+            <font size='2'>Code licensed under <a href="http://www.gnu.org/licenses/agpl.html">AGPLv3</a>. Content licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.<br><br>
+			<font size='2'><b>Join our Discord:</b> <a href="https://discordapp.com/invite/9b635Fy">Instant Invite</a></font>
+			</td>
+	</tr>
+</table>
+
+<br><b>HaloStation Credit List</b>
+<table align='center' class="top">
+	<tr>
+		<td valign='top'>
+            <font size='2'><b>Current Project Maintainers:</b> See Discord<br></font>
+			<font size='2'><b>Currently Active GitHub contributor list:</b> <a href='https://github.com/HaloSpaceStation/HaloSpaceStation13/graphs/contributors'>-Click Here-</a><br></font>
+			<font size='2'><b>Code:</b> Bloc97, Bloxgate, Cael_Aislinn, Crazylemon, XO-11, the Baystation 12 team<br></font>
+			<font size='2'><b>Sprites:</b> Kmc, Krautzy, Baystation 12 spriters<br></font>
+			<font size='2'><b>Sounds:</b> Aryn<br></font>
+            <font size='2'><b>Main Testers:</b> Anyone who has submitted a bug to the issue tracker, or played prior to the server going public<br></font>
+			<font size='2'><b>Thanks to:</b> /tg/ station, /vg/station, Baystation 12, GoonStation devs, the original SpaceStation developers and Invisty for the title image.<br> Also a thanks to anybody who has contributed who is not listed here :( Ask to be added here on discord.</font>
+			<font size='2' color='red'><b><br>Have a bug to report?</b> Visit our <a href="https://github.com/HaloSpaceStation/HaloSpaceStation13/issues?state=open">Issue Tracker</a>.<br></font>
+		</td>
+	</tr>
+</table>
+
+		<!--
+		
+		TO ADD AN ENTRY, ADD AND MAINTAIN YOUR OWN changelog/USERNAME.yml FILE. 
+		
+		*** DO NOT MODIFY THIS FILE OR YOU WILL CAUSE MERGE CONFLICTS. ***
+		
+		-->
+		<div class="commit sansserif">
+			<h2 class="date">04 October 2019</h2>
+			<h3 class="author">Koenigsegg updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Add a semiauto option for the plasma rifle less shots per click in favor of better accuracy</li>
+			</ul>
+
+			<h2 class="date">03 October 2019</h2>
+			<h3 class="author">CaelAislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">The Insurrection's Rabbit Hole Base on Geminus can now be destoryed. Take out 3 of the base's 12 structural weak points and the base will start irreversibly collapsing... or keep destroying them to speed it up.</li>
+			</ul>
+			<h3 class="author">bloxgate updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="wip">Sector demolition system</li>
+				<li class="experiment">Factions lose the ability to spawn new palyers if their base is destroyed</li>
+				<li class="maptweak">The Bertels armory has a demolitions pinpointer and demolition charges</li>
+				<li class="maptweak">The Geminus insurrection base now has 5 structural weak points for use in demolition</li>
+			</ul>
+
+			<h2 class="date">24 August 2019</h2>
+			<h3 class="author">Kozi32 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">add Riley donor armor</li>
+			</ul>
+
+			<h2 class="date">21 August 2019</h2>
+			<h3 class="author">CaelAislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="experiment">Partially replaces ZAS fire with a simpler system that should make incendiary weapons flamethrower, chem grenade, landmine work properly. As it is partially integrated with ZAS, there may be some unusual behaviour in situations where simple fire and ZAS fire both appear.</li>
+				<li class="rscadd">NPCs can now ignite.</li>
+				<li class="rscadd">NPCs scream and run in fear when they are taking damage.</li>
+			</ul>
+
+			<h2 class="date">15 August 2019</h2>
+			<h3 class="author">BDpuffy420 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Autopilot should work again</li>
+			</ul>
+			<h3 class="author">XO-11 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Hostile mobs are now capable of registering the presence of vehicles.</li>
+				<li class="tweak">Hostile mobs in a vehicles gunner seat can now operate the guns.</li>
+			</ul>
+
+			<h2 class="date">13 August 2019</h2>
+			<h3 class="author">CaelAislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Rewrote autosurgeons for embedded object and bone fixing. Hopefully it is working now</li>
+				<li class="bugfix">Geminus surface no longer uses dynamic lighting. This has resulted in a few minor lighting artifacts for a significant optimisation.</li>
+			</ul>
+
+			<h2 class="date">12 August 2019</h2>
+			<h3 class="author">BDpuffy420 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Updated kigyar NPC ship sprite and added SDV to the NPC pool</li>
+				<li class="rscdel">Remove some lights from Geminus to help with Travis test</li>
+				<li class="rscadd">added the m45 TS and fixed the m90 sprite</li>
+				<li class="rscadd">Added SoE to Rev mode</li>
+				<li class="rscadd">New shipnames</li>
+				<li class="bugfix">M77s inhand should be fixed</li>
+				<li class="bugfix">Fixed the fuelrod sprite</li>
+				<li class="bugfix">Fixed type51 inhand</li>
+				<li class="bugfix">ONI has UNSC faction tag</li>
+				<li class="bugfix">x52 shouldnt spawn in reclamtion now</li>
+				<li class="maptweak">fix blocked ladders on Geminus</li>
+				<li class="spellcheck">fixed the text error of x25 to x52</li>
+			</ul>
+
+			<h2 class="date">11 August 2019</h2>
+			<h3 class="author">XO-11 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">The brief slipspace anomaly that provided capture points with sentinel defenders has now resided. Appropriate defenders have be assigned.</li>
+			</ul>
+			<h3 class="author">daPotato updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="imageadd">Changes SDV overmap icons to fit DAV class.</li>
+			</ul>
+
+			<h2 class="date">10 August 2019</h2>
+			<h3 class="author">Eluxor updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="imageadd">Added new simple mob defender sprites for all factions.</li>
+			</ul>
+
+			<h2 class="date">09 August 2019</h2>
+			<h3 class="author">XO-11 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Fleetbound NPC ships will now follow the leader ship.</li>
+				<li class="rscadd">Fleets can now be modified via NPC comms console.</li>
+				<li class="tweak">Some radios might work better now.</li>
+				<li class="tweak">Geminus Capture nodes will now create forerunner defense drones when captured.</li>
+			</ul>
+
+			<h2 class="date">07 August 2019</h2>
+			<h3 class="author">Kozi updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Updates the human autosurgeons sprite</li>
+			</ul>
+			<h3 class="author">XO-11 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">NPC overmind controllers now report to a radiochannel, if relevant.</li>
+			</ul>
+
+			<h2 class="date">06 August 2019</h2>
+			<h3 class="author">Auris456852 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Made all the previously mysteriously not charging things on the UNSC Bertels charge. No more need to cut and reconnect wires in 5 different places.</li>
+			</ul>
+			<h3 class="author">Eluxor updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Reworked all SOE gear, berets, helmets and jumpsuits galore. Dress your own SOE trooper game not included. SOE armor is no longer spaceproof.</li>
+				<li class="rscadd">SOE gets a very new spacesuit with a jetpack for breaching and capturing operations in space, due their new armor.</li>
+				<li class="rscadd">Added two new guns that fit the newly made SOE style. The KV32 Double barrelled custom shotgun, magazine FED with 4 rounds and the old Trusty weapon of space pirate captains... THE HANDGONNE A 14.5mm pistol.</li>
+				<li class="imageadd">Added new SoE gear sprites.</li>
+			</ul>
+			<h3 class="author">XO-11 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">npc ship targeting should actually work now.</li>
+			</ul>
+
+			<h2 class="date">01 August 2019</h2>
+			<h3 class="author">XO-11 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Modifies the way lighting overlays are generated for NPC ships, potentically fixing the darkness bug.</li>
+			</ul>
+
+			<h2 class="date">31 July 2019</h2>
+			<h3 class="author">Bloxgate updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="experiment">Molar heat capacities have been corrected to their actual values for all gases.</li>
+			</ul>
+			<h3 class="author">XO-11 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Makes the needler respect armour and shield blocks.</li>
+			</ul>
+
+			<h2 class="date">28 July 2019</h2>
+			<h3 class="author">bloxgate updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fix for server crashing exploit</li>
+			</ul>
+
+			<h2 class="date">27 July 2019</h2>
+			<h3 class="author">Desolane updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Spent casings now eject properly and dont land on walls and randomly surround the player.</li>
+			</ul>
+
+			<h2 class="date">25 July 2019</h2>
+			<h3 class="author">Koenigsegg updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="maptweak">Added blast two separate blast doors to the virology containment pen of the X52 base one to put the room under lockdown, the other is for the containment pens only</li>
+				<li class="maptweak">Removed the wall underneath the door leading to the APC</li>
+				<li class="maptweak">Added a closet full of randomised gloves, hats, jumpsuits, shoes and accessories</li>
+				<li class="maptweak">Added GNA disks to the virology room and gave the virus fridge the proper access requirement</li>
+				<li class="maptweak">Added a farmbot, sink, bucket and plant analyzer to hydroponics</li>
+				<li class="maptweak">Added two Theta Armory Closets with limited gear placeholder until theta can get their own gear</li>
+			</ul>
+
+			<h2 class="date">24 July 2019</h2>
+			<h3 class="author">Boltersam updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="imageadd">adds covvie medkit sprites that might be pokeballs</li>
+				<li class="imageadd">adds brute softsuit sprite</li>
+				<li class="imageadd">adds spectre sprite. Front and back are good to go but sides are still a WIP</li>
+				<li class="tweak">gives a facelift to the URF c12 spray, door subverter and smart mine so they might get used</li>
+				<li class="tweak">fixes ghost destroyed sprite fire</li>
+				<li class="tweak">Brutes have been buffed to be a lot tankier than before. Rip and tear.</li>
+			</ul>
+			<h3 class="author">Koenigsegg updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="maptweak">Add x52 base to geminus sewers With doors restricted to x52 personnel</li>
+				<li class="maptweak">Add virology, RD, Hydroponics, chemistry, surgery and integrated circuits to the base as well as a storage room with a few items of interest.</li>
+				<li class="rscadd">Add X52 Researcher and Research Director</li>
+			</ul>
+
+			<h2 class="date">22 July 2019</h2>
+			<h3 class="author">Zergrush updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Marine Boots no longer make such a loud noise due to new lightweight materials</li>
+			</ul>
+			<h3 class="author">bloxgate updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Added field medical kits for the UNSC</li>
+				<li class="rscadd">There are now multiple types of autoinjectors with different meds available</li>
+				<li class="tweak">autoinjectors are colorcoded. port from Bay</li>
+				<li class="maptweak">Several of the random med kits in the Bertels medbay have been replaced with field kits</li>
+				<li class="maptweak">The Bertels armorys medical lockers now contain field medkits.</li>
+			</ul>
+
+			<h2 class="date">21 July 2019</h2>
+			<h3 class="author">XO-11 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">NPC ships now spawn on roundstart, pathing their way to nearby planets.</li>
+				<li class="tweak">NPC ship randommove will prefer planets.</li>
+				<li class="tweak">NPC ship transmissions now respect known languages.</li>
+				<li class="rscadd">Adds a covenant combat NPC ship.</li>
+				<li class="rscadd">Adds a flood combat NPC ship.</li>
+				<li class="tweak">NPC ships now randomly choose icons when spawning.</li>
+			</ul>
+
+			<h2 class="date">20 July 2019</h2>
+			<h3 class="author">Cael_Aislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="experiment">Rewrote the Outer Colones, Reclamation and Revolution objective system. This should resolve all outstanding bugs with objective tracking. If there are any bugs with objective tracking or score display, please report them.</li>
+				<li class="rscadd">Readds ONI Security Commander and ONI Research Director jobs to Crescent Base, and caps ONI security guard to 3.</li>
+			</ul>
+
+			<h2 class="date">19 July 2019</h2>
+			<h3 class="author">Cael_Aislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="experiment">Autosurgeons now do limited surgery</li>
+				<li class="rscadd">Shady characters buying and selling human organs may be seen wandering the streets of Geminus... just dont ask where the organs come from.</li>
+				<li class="maptweak">NPC medical staff now work the Geminus Hospital.</li>
+				<li class="tweak">Due to inflation, the prices of all supply packs shipping in to Rabbit Hole Base have increased 10x</li>
+			</ul>
+
+			<h2 class="date">18 July 2019</h2>
+			<h3 class="author">Cael_Aislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Capture nodes can now be properly captured again.</li>
+				<li class="bugfix">Covenant and human short range slipspace drives no longer count the ship as being destroyed</li>
+				<li class="bugfix">Fixes and readds the Covenant long range slipspace drive</li>
+			</ul>
+
+			<h2 class="date">17 July 2019</h2>
+			<h3 class="author">Cael_Aislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Innies can now deposit and withdraw cash from the supply console</li>
+				<li class="bugfix">Geminus capture nodes are now announced globally when they flip due to radios being borked</li>
+			</ul>
+
+			<h2 class="date">16 July 2019</h2>
+			<h3 class="author">Cael_Aislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Adds colony capture mechanics. Fight over Geminus to capture key strategic locations the Police Station, City Hall, Hospital, Space Elevator and MAC facility.</li>
+				<li class="tweak">Adds some extra radio chat colours for ONICOM, SQUADCOM, TEAMCOM, TACCOM.</li>
+				<li class="bugfix">Geminus Innies should now spawn with Innie headsets</li>
+			</ul>
+
+			<h2 class="date">15 July 2019</h2>
+			<h3 class="author">PantasTheDank updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="maptweak">Moved the medical wall locker and oxygen supply wall locker in the Generator Room44 104 5 First Deck on Cassius Station so its now accessible</li>
+				<li class="maptweak">Added a fusion fuel packet crate in the generator room on Cassius station in the same room as the maptweak above</li>
+				<li class="maptweak">Moved the consoles and buttons around in the monitoring room on Cassius Station a room above the nuke also added a paper bin and a blue pen there</li>
+				<li class="maptweak">Moved the medical wall lockers and emergency wall lockers so they can be accessed properly in the generator rooms on Bertels Deck 1 and 3  128 74 12 and 108 74 14</li>
+			</ul>
+			<h3 class="author">XO-11 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Adds an overmindcontroller that makes hostilesimplemob combat reactions smarter, including dynamic troop dispatch and reinforcementcalls. Currently implemented as a floodovermind, adminenabled by spawning objstructureovermindcontroller.</li>
+				<li class="tweak">Lowers hostilemob targetengagerange to 7, so they no longer see you before you see them.</li>
+				<li class="tweak">Speeds up assaultmarker pathing, so hostile mobs dont take ages to arrive. This will make stranded flood arrive at their intended location faster, allowing the wave system to actually be seen by players.</li>
+			</ul>
+
+			<h2 class="date">14 July 2019</h2>
+			<h3 class="author">PantasTheDank updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="maptweak">Added 50 sheets of plastic in the innie base workshop</li>
+				<li class="maptweak">Added a hand labeler in the innie base medbay</li>
+				<li class="maptweak">Increased the number of tactical huds and added 6 spy bugs with a Spy Bugs Monitor tablet alongside a megaphone in the innie base armory</li>
+				<li class="maptweak">Added a paper bin with a red pen and 3 folders in the innie base Command room</li>
+				<li class="maptweak">Added 4 airlock braces in the innie base generator room</li>
+				<li class="maptweak">Added shooting targets in the firing range</li>
+				<li class="maptweak">Added floor tiles under some doors I forgot to put in my last PR</li>
+				<li class="maptweak">Adds a squad manager console in the innie base Command room</li>
+				<li class="maptweak">Added 2 power cells in the innie base workshop</li>
+				<li class="maptweak">Added two boot knifes in the innie base fight ring</li>
+			</ul>
+
+			<h2 class="date">13 July 2019</h2>
+			<h3 class="author">Desolane updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="soundadd">marine boots now stomp menacingly</li>
+				<li class="soundadd">flood have various new sound barks for death and attack</li>
+				<li class="rscadd">flood now decide what form to make based on armor worn</li>
+				<li class="rscadd">new flood sprites have been put in for default forms</li>
+				<li class="rscadd">flood have emotes and more attack verbs</li>
+				<li class="rscadd">combat forms can now destroy welds on doors</li>
+				<li class="bugfix">infection forms cannot pry open welded doors</li>
+				<li class="bugfix">juggernauts are beefy and have fixed bounds</li>
+				<li class="tweak">marine headset typo fixed</li>
+				<li class="tweak">infection forms can be walked over</li>
+				<li class="tweak">combat forms with armor have minor damage resistance</li>
+			</ul>
+
+			<h2 class="date">12 July 2019</h2>
+			<h3 class="author">Cael_Aislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">ONI researcher and guard are now species locked to human</li>
+				<li class="bugfix">Fixes UNSC void suit magboots</li>
+				<li class="experiment">Invasion gamemode has been renamed to Outer Colonies and given a minimum player requirement of 15</li>
+				<li class="wip">Adds Reclamation and Revolution gamemode no population requirement.</li>
+				<li class="rscadd">You can now slip past energy barricades without destroying them.</li>
+				<li class="bugfix">The Geminus Insurrection base is now properly faction locked and inaccessible to outsiders without taking the wall down.</li>
+				<li class="bugfix">Covenant boarding pods should now have 8 tile range as intended.</li>
+			</ul>
+
+			<h2 class="date">10 July 2019</h2>
+			<h3 class="author">PantasTheDank updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="maptweak">Updates the SoE Osprey</li>
+				<li class="maptweak">Adds one additional armor and weapon vendor in the armory a making it a total of  weaponsgear vendors and  armor vendors</li>
+				<li class="maptweak">Added  medkits in the medicaladded  triadrenaline syringes removed a plastic table</li>
+				<li class="maptweak">Botanys southeastern corner has been shifted to make the locker avaliablewas blocked by trayshopefully fixed the seed vendor</li>
+				<li class="maptweak">removed two plastic tables in the workshop as they blocked the autolathes</li>
+				<li class="maptweak">Added two shorts in the armory on the tables with boxing gloves</li>
+				<li class="maptweak">Moved the rolling pina plastic knifeand universal enzyme onto the table with the salt saker and pepper mill Deleted the plastic table one tile north of it</li>
+				<li class="maptweak">Removed rocks under brig doors and windows</li>
+				<li class="maptweak">Removed a wall under eastern janitorial rooms doors</li>
+				<li class="maptweak">Placed a button for the brig outside</li>
+				<li class="maptweak">Mapped in more innie headsets in their armory it now has</li>
+				<li class="tweak">Innies should now have proper access to the cells</li>
+			</ul>
+
+			<h2 class="date">07 July 2019</h2>
+			<h3 class="author">bloxgate updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="experiment">This changelog is now autogenerated</li>
+			</ul>
+
+			<h2 class="date">24 June 2019</h2>
+			<h3 class="author">Cael_Aislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="experiment">Insurrectionists now have an SS style cargo shuttle to resupply their base Unfortunately all the guns and armour also went missing from their base</li>
+				<li class="maptweak">The Asteroid Listening Post now has locked doors in case any pesky Feds come wandering by</li>
+				<li class="tweak">Removes or merges many redundant job roles including Prophet Honour Guard Skirmisher majors and minors Bertels IWO and crew</li>
+				<li class="tweak">Adds Skirmisher commando slot to Covenant</li>
+				<li class="tweak">Gives Bertels marine platoon leader and ODST leader access to Bertels armoury</li>
+			</ul>
+			<h3 class="author">Koenigsegg updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Biogenerators can now print advanced trauma/burn kits for 100 units of bio matter. Plants have joined the war effort.</li>
+				<li class="rscadd">Add the SOE Osprey ship, for the SOE commandos. It's big. It's bad. But most importantly... it flies.</li>
+				<li class="rscadd">Add an SOE Commando Captain role, which is the only one that can enter the captains quarters on the ship. Likely to hide their crippling depression.</li>
+				<li class="rscadd">Add spawnpoints for the commandos, on the SOE Osprey instead of the listening outpost. Just in case.</li>
+				<li class="rscdel">Delete the old URFC Avarice and the unused 2nd deck map file. Clearly, another victim of Thanos.</li>
+				<li class="tweak">Change the URFC Commandos for SOE Commandos in various files. URFC is officialy gone.</li>
+			</ul>
+
+			<h2 class="date">21 June 2019</h2>
+			<h3 class="author">Cael_Aislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="maptweak">Covenant spawn on their ship again in Invasion. There is no more Covenant base, shuttle or defence platforms.</li>
+				<li class="tweak">Covenant grunts and kigyar can no longer speak English.</li>
+			</ul>
+
+			<h2 class="date">20 June 2019</h2>
+			<h3 class="author">Cael_Aislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="experiment">Rewrites job spawning and adds more warning output. If something goes wrong, report issues on github and tell a dev.</li>
+				<li class="tweak">Command roles for all factions should now get priority assignment in the job code.</li>
+			</ul>
+
+			<h2 class="date">19 June 2019</h2>
+			<h3 class="author">Cael_Aislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Covenant BattleNet chat is now a lovely shade of purple, as it should be.</li>
+			</ul>
+			<h3 class="author">XO-11 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Tweaks the dispersion of both LMG types to make them not hyper accurate.</li>
+			</ul>
+
+			<h2 class="date">12 June 2019</h2>
+			<h3 class="author">BDpuffy420 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Added new welcome and end credit sound files</li>
+				<li class="rscadd">Added new halo based titles for the end credits</li>
+				<li class="maptweak">URF base changed to fit the underground setting</li>
+				<li class="maptweak">The new URF armor and gear mapped in on the base now</li>
+				<li class="maptweak">Added more life to the city (more NPCS)</li>
+				<li class="maptweak">Fixes colony MAC to be useable</li>
+				<li class="maptweak">Re-open the colony mining area and fixed up caves</li>
+				<li class="bugfix">Fix M7 & M7S inhand sprites</li>
+				<li class="bugfix">Fix Ultra Spawn issue (let the salt flow once again)</li>
+			</ul>
+			<h3 class="author">Bloxgate updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="experiment">Increases the speed of the autopilot to try and unbreak it</li>
+			</ul>
+			<h3 class="author">XO-11 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Adds a targeting system console that allows for targeting of different ship and planetary areas. Projectiles have a chance to miss the target ship when a target area is set.</li>
+				<li class="tweak">Resets the geminus MAC to function at roundstart and provides enough generators for it to recharge in 12 seconds.</li>
+				<li class="tweak">Buffs glassing by making roofs not the end-all blocker.</li>
+				<li class="tweak">Nerfs the pulse laser's penetration, but buffs the damage.</li>
+				<li class="tweak">Buffs the deck gun by giving it a minor explosion and penetration.</li>
+			</ul>
+
+			<h2 class="date">11 June 2019</h2>
+			<h3 class="author">Cael_Aislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="experiment">Adds the Revolution gamemode. All is not well in Geminus City...</li>
+			</ul>
+			<h3 class="author">SierraKommodo updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="experiment">Fix autopilot to not use all the fuel</li>
+			</ul>
+
+			<h2 class="date">09 June 2019</h2>
+			<h3 class="author">BDpuffy420 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Added new in-hand sprites for weapons</li>
+				<li class="rscadd">Added updated URF armor sprites</li>
+				<li class="maptweak">Fixed some doors on Geminus and adds GCPD hogs</li>
+				<li class="maptweak">mapped in new URF armor sets on the Thorn and URF Base</li>
+				<li class="maptweak">EVA Marine gear moved behind IWO office to stop greentide theft</li>
+				<li class="tweak">Changed known coords for covenant as a stopgap for civ/URF RP</li>
+			</ul>
+			<h3 class="author">Cael_Aislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="maptweak">Geminus sewer lighting shouldn't run out of power now.</li>
+				<li class="maptweak">Giant sewer rats are respawning in their own filth.</li>
+				<li class="bugfix">Fix the Geminus Insurrection base exits.</li>
+				<li class="tweak">Innies spawn in civilian clothes with colonist IDs. Grab some tac gear if you want to go loud, otherwise head up to infiltrate the colony.</li>
+			</ul>
+
+			<h2 class="date">07 June 2019</h2>
+			<h3 class="author">Cael_Aislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="maptweak">Adds a semi-randomised sewers level underneath Geminus. Watch out for the feral wildlife...</li>
+				<li class="maptweak">Insurrectionists now have a secret base hidden underneath Geminus.</li>
+				<li class="tweak">Insurrectionists now spawn in their Geminus base and no longer spawn with the Thorn.</li>
+				<li class="tweak">URFC now spawn on the Avarice, and start near the Asteroid Listening Post as their base.</li>
+			</ul>
+			<h3 class="author">RenGusta updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Increased SMG Accuracy.</li>
+				<li class="tweak">SRS Accuracy Increase, SRS Projectile Accuracy Decrease.</li>
+			</ul>
+			<h3 class="author">XO-11 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="maptweak">rebalances the Geminus MAC to require time and effort to activate and use.</li>
+				<li class="maptweak">Geminus MAC starts with no generators or power supply, must be obtained by grabbing generators around the map and fuelling them with solid phoron / tritium.</li>
+				<li class="maptweak">Geminus MAC also now has a much longer charge time of 30 seconds when fully powered. This, coupled with the lowered amount of capacitors (it now does ~2000 damage instead of 2600) means that the MAC doesn't draw 490000w of power per tick. Instead it now draws 12500w per tick.</li>
+				<li class="tweak">Lowers kig-yar brute mod by 1 (1.2 -> 1.1 / 1.3 -> 1.2)</li>
+			</ul>
+
+			<h2 class="date">29 May 2019</h2>
+			<h3 class="author">Bloxgate updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Remove pressure damage from cryo-pods</li>
+				<li class="rscadd">Adds cryoprethaline and hexaline glycol, two chemicals that protect from cold burns</li>
+				<li class="experiment">Certain chemicals can provide limited immunity from cold damage</li>
+				<li class="rscadd">Adds ketoprofen, a medium-strength painkiller that lowers body temperature</li>
+			</ul>
+			<h3 class="author">Cael_Aislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="maptweak">Elmsville KS7 has been replaced by Geminus City Colony. There is a different joblist, and further map changes will be coming.</li>
+				<li class="experiment">The map folder layout has been cleaned up significantly. This may introduce errors or bugs, particularly with job spawning. Remember to report bugs or unexpected behaviour to Github so it can be fixed.</li>
+			</ul>
+
+			<h2 class="date">25 May 2019</h2>
+			<h3 class="author">Cael_Aislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Flamers no longer burn with the heat of a thousand suns. They should do 40 impact burn damage spread over the body, plus about another 2.5 burn damage per tick while on fire.</li>
+				<li class="bugfix">All reagents that are supposed to be grindable should properly grind now.</li>
+			</ul>
+			<h3 class="author">bdpuffy420 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Added new URF armor sets Light, Medium and Heavy.</li>
+				<li class="tweak">local date changed to 2531</li>
+			</ul>
+
+			<h2 class="date">23 May 2019</h2>
+			<h3 class="author">Cael_Aislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Makes craftable landmines using roughly the same process as chem grenades.</li>
+				<li class="rscadd">Adds Innie RGL MK12 single shot launcher.</li>
+				<li class="rscadd">Adds the nitroglycerin chem mix.</li>
+			</ul>
+
+			<h2 class="date">22 May 2019</h2>
+			<h3 class="author">Cael_Aislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fix flamethrowers and incendiary grenades.</li>
+			</ul>
+
+			<h2 class="date">18 May 2019</h2>
+			<h3 class="author">XO-11 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Adds a new feature to tac-huds: Remote Viewing. When linked to a squad manager, and that squad manager is linked to a squad camera console, a person operating that console can view through each of the tac-huds in the linked squad.</li>
+				<li class="rscadd">Adds a tac hud camera console, allowing for remote viewing of tac-huds in linked squads. Smack the console with a squad manager to link a new squad to it. Consoles present in bridges.</li>
+				<li class="rscadd">Integrates tac-huds with most helmets, human and covvie.</li>
+				<li class="rscadd">Adds vehicle headlights, toggleable by verb. Each faction has different vehicle headlights.</li>
+			</ul>
+			<h3 class="author">bloxgate updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Cryo no longer kills people if the correct meds are used</li>
+			</ul>
+
+			<h2 class="date">27 April 2019</h2>
+			<h3 class="author">G0NTAR updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="wip">Covenant Corvette Fixes/Patch notes</li>
+				<li class="maptweak">Fixed few mapping issues</li>
+				<li class="maptweak">Tweaked and moved various rooms for better navigation (Grunt Barraks mainly)</li>
+				<li class="rscadd">Atmos Shields added on key ship bays (mainly on sec-storage as Mr.Beatz request) (again, sorry 4 the woopsie Mr.Beatz)</li>
+				<li class="rscadd">Edited medbay to hold it's own surgery tools n' more</li>
+				<li class="rscadd">Added Covenant Chemical Dispenser (previously human one)</li>
+				<li class="rscadd">Added nice looking Nanolaminate Coated Windows around Shield Generator</li>
+			</ul>
+			<h3 class="author">XO-11 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Makes flood infestors able to heal and revive flood combat forms.</li>
+				<li class="rscadd">Allows hostile mobs to both attack and move, so simply running away should be less viable.</li>
+				<li class="rscadd">Allows flood combat forms to produce infestors, but only one can live at a time.</li>
+				<li class="tweak">Tones down the effect of slipspade drive overloading. Sadly it's now just a really big explosion, but it shouldn't crash the server anymore.</li>
+				<li class="rscadd">Adds the Cobra, outfitted to function as an anti-armour sniper vehicle.</li>
+				<li class="rscadd">Adds the URF Bull, an old halftrack chassis refitted to function as an APC with a mounted machine gun.</li>
+				<li class="rscadd">Adds the Covenant Wraith, capable of firing deadly balls of plasma in a slow arc over any carefully constructed defenses.</li>
+				<li class="tweak">Gives T'voans a bit more health and pain resist, for the sake of balancing.</li>
+				<li class="tweak">Makes vehicles able to carry crates (Pelican, Shadow and Spirit, currently.)</li>
+				<li class="tweak">Makes BR mags cross-compatible.</li>
+				<li class="tweak">Lowers overall bomb resists on many armours, again.</li>
+				<li class="rscadd">Adds ship scanning consoles which allow for the targeting of certain areas of a ship and a scan of the ship's overall superstructure strength. Due to lack of mapped targetable areas, no consoles are currently mapped in.</li>
+				<li class="tweak">Rebalances explosions by adding an optional argument to the explosion proc, which, when used will ensure that within a set radius, an explosion will apply a flat amount of damage to contained mobs.</li>
+				<li class="tweak">Applies the above changes to rocket launcher explosions and other explosion sources.</li>
+				<li class="rscadd">Makes vehicle have a psuedo-hud element that shows the number of people in a vehicle and their species.</li>
+				<li class="tweak">Rebalances existing vehicles by nerfing/buffing health, resistances and speed, where appropriate.</li>
+				<li class="rscadd">Adds the Scorpion Main Battle Tank. Currently adminspawn only.</li>
+				<li class="rscadd">Adds the M12 Warthog LRV, Chaingun variant. Currently adminspawn only.</li>
+				<li class="tweak">Rebalances armor bomb resist values, nerfing/buffing where appropriate.</li>
+				<li class="rscadd">Adds a vehicle repair system. Vehicle repair is a multi-step process. (Must be in Harm mode to do below steps.)</li>
+				<li class="rscadd">Step 1: Examine the components of the vehicle to assess the damage (Inspect Components verb)</li>
+				<li class="rscadd">Step 2: Apply sheets of applicable material (Steel for UNSC + Innie, Nanolaminate for covvies).</li>
+				<li class="rscadd">Step 3: Finalise the repair by using the tools shown in step 1 on the vehicle.</li>
+				<li class="rscadd">Step 3: Congrats, you've repaired a vehicle. Now don't break it again.</li>
+				<li class="rscadd">Destroyed vehicles don't need to be repaired to full to be allowed to move again.</li>
+				<li class="tweak">Fixes armour repair benches.</li>
+			</ul>
+
+			<h2 class="date">29 March 2019</h2>
+			<h3 class="author">Unknown updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="maptweak">Moves Covenant surgery tools into the Covenant Corvette medbay.</li>
+				<li class="wip">Gives Covenant a portable energy shield to block hull breaches (allows mobs to walk through).</li>
+				<li class="wip">Nanolaminate floors can now be built.</li>
+				<li class="tweak">Covenant belts should hold much more stuff now.</li>
+			</ul>
+			<h3 class="author">XO-11 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Adds general-use slipspace drives to the SDV, HA and Thorn.</li>
+				<li class="rscadd">Slipspace transit to a location is a short, multiple step process.</li>
+				<li class="rscadd">Step 1: Activate drive to transport your ship to nullspace after a small (10 second) delay.</li>
+				<li class="rscadd">Step 2: Wait for cooldown to expire (Currently a 1 min, 15 second wait)</li>
+				<li class="rscadd">Step 3: Activate slipspace drive again to enter co-ordinates for exit location after a small (10 second) delay.</li>
+				<li class="rscadd">Step 4: Arrive at location, repeat process once drive has fully recharged (5 minute delay).</li>
+				<li class="tweak">Increases the size of the overmap. 100 -> 125</li>
+			</ul>
+
+			<h2 class="date">25 March 2019</h2>
+			<h3 class="author">Bloxgate updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="experiment">AHelps are now sent to the staff discord if needed</li>
+			</ul>
+			<h3 class="author">Cael_Aislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="wip">Adds slipspace engine to the Covenant Corvette (near starboard engine cluster behind a secure door). Warning, entering slipspace is a one way trip!</li>
+				<li class="tweak">Latejoin jobs should now be properly disabled if their spawnpoint is in unsafe atmos.</li>
+			</ul>
+
+			<h2 class="date">19 March 2019</h2>
+			<h3 class="author">Cael_Aislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="experiment">Adds Invasion gamemode with objective system for all 3 factions (UNSC, Covenant, Insurrection). There are about 6 objectives per faction and all are scoring.</li>
+				<li class="wip">Some Insurrection objectives are disabled due to WIP (Colony Revolt, Recruit X52, Recruit Pirates). All faction objectives may be buggy.</li>
+			</ul>
+			<h3 class="author">Stingray540 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Allows Marines to use their weapon vendors again.</li>
+				<li class="bugfix">Stops elevators from being deathtraps.</li>
+				<li class="tweak">Edits the job and area names for the Heaven Above for more clarity.</li>
+				<li class="tweak">Increases the Acceleration capability of the HA from 0.4 to 3.2.</li>
+			</ul>
+
+			<h2 class="date">11 March 2019</h2>
+			<h3 class="author">Stingray540 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Allows Marines to use their weapon vendors again.</li>
+				<li class="bugfix">Stops elevators from being deathtraps.</li>
+				<li class="tweak">Edits the job and area names for the Heaven Above for more clarity.</li>
+				<li class="tweak">Increases the Acceleration capability of the HA from 0.4 to 3.2.</li>
+				<li class="maptweak">Adds Sleepers to the HA medbay</li>
+				<li class="maptweak">Adds an additional row of morgue bays to the HA.</li>
+				<li class="maptweak">Adds additional defibs to the HA medical storage room.</li>
+				<li class="maptweak">Adds advanced medical scanners, bioprinters, and organ printers to surgery.</li>
+				<li class="maptweak">Medbay bloodbags are now properly stored</li>
+				<li class="maptweak">Added additional straightjacket sets to the HA brig.</li>
+			</ul>
+
+			<h2 class="date">09 March 2019</h2>
+			<h3 class="author">Cael_Aislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="maptweak">Disables the Insurrection Asteroid Listening Post.</li>
+				<li class="bugfix">Disables xenoarchaeology chat spam in deadchat.</li>
+				<li class="maptweak">Disables the UNSC Bertels.</li>
+				<li class="maptweak">Disables all human civilian ships.</li>
+				<li class="bugfix">Fixes power cables not connecting across zlevels at roundstart.</li>
+			</ul>
+			<h3 class="author">Maxatter & Stingray540 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="maptweak">Fixes and updates the frigate UNSC Heavens Above, enables it for First Contact.</li>
+			</ul>
+			<h3 class="author">XO-11 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Moves faction spawns to stationary faction bases. Faction bases contain spawns for most of a faction's roles and has a console that allows you to spawn a faction shuttle on a 10 minute timer. Faction ships spawn near faction bases.</li>
+				<li class="rscadd">Adds nav computers and nav-data-chips, which contain both nav data and Identify Friend Or Foe data, which is used to determine the faction of the vessel.</li>
+				<li class="rscadd">Provides faction bases with automated defense platforms. These platforms fire on anything that is not marked as their faction.</li>
+			</ul>
+
+			<h2 class="date">04 February 2019</h2>
+			<h3 class="author">Cael_Aislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="experiment">Covenant plasma weapons (pistol, rifle, brute rifle, beam rifle) no longer self recharge, but must be placed in weapon racks instead to recharge. Their magazine size has been quadrupled to compensate.</li>
+				<li class="rscadd">Covenant plasma weapons (pistol, rifle, brute rifle, beam rifle) now dim lights when running out of charge and blink when nearly empty.</li>
+				<li class="tweak">Yan'Me drones should hate humans as much as the rest of the Covenant.</li>
+				<li class="bugfix">Covenant energy barricades are killable.</li>
+				<li class="rscadd">Overcharged plasma pistols are now more obvious, and emit a small amount of green light.</li>
+				<li class="rscadd">Cleanbots will pick up bullets. Also adds Insurrection and UNSC themed cleanbots (roombas).</li>
+				<li class="bugfix">Fixes some issues with plasma charges and plasma drills.</li>
+				<li class="tweak">Airlocks have much more health so they will be harder to kill just by shooting. Better stock up on some anti-structure gear now when you go raiding.</li>
+			</ul>
+
+			<h2 class="date">23 January 2019</h2>
+			<h3 class="author">Cael_Aislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="wip">Adds a voteable mapswitcher.</li>
+			</ul>
+
+			<h2 class="date">21 January 2019</h2>
+			<h3 class="author">XO-11 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">The system is replete with forerunner artifacts. Xenoarcheolagy Artifact and general finds spawning re-enabled.</li>
+			</ul>
+
+			<h2 class="date">20 January 2019</h2>
+			<h3 class="author">CaelAislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="maptweak">Fixes ladders (and VT9 stairs).</li>
+				<li class="bugfix">Electrical storms will now actually have an effect.</li>
+				<li class="bugfix">Fixes several issues with URF and URFC radios.</li>
+			</ul>
+			<h3 class="author">XO-11 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="maptweak">Adds a set of stairs leading down to the hidden fun stuff on VT9-042.</li>
+				<li class="maptweak">Adds a xenoarch lab and smelting room to VT9-042.</li>
+			</ul>
+
+			<h2 class="date">18 January 2019</h2>
+			<h3 class="author">Cael_Aislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="wip">Rewrites overmap/multiz system. Report any bugs with stairs at https://github.com/HaloSpaceStation/HaloSpaceStation13/</li>
+			</ul>
+			<h3 class="author">XO-11 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Added two ways to obtain repair your armour, portable (normal sized) armour repair kits and stationary repair benches. Repair kits found in Gunvendors.</li>
+				<li class="rscadd">Adds a (verb-activated) mode to all shield-using armor that allows the toggling of an EVA Mode which reduces the maximum shield strength by a quarter but provides full protection against pressure and cold.</li>
+			</ul>
+
+			<h2 class="date">17 January 2019</h2>
+			<h3 class="author">Stingray updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Allows Orions and Spartans to have hair</li>
+			</ul>
+			<h3 class="author">XO-11 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Added two ways to obtain repair your armour, portable (normal sized) armour repair kits and stationary repair benches. Repair kits found in Gunvendors.</li>
+				<li class="rscadd">Adds a (verb-activated) mode to all shield-using armor that allows the toggling of an EVA Mode which reduces the maximum shield strength by a quarter but provides full protection against pressure and cold.</li>
+			</ul>
+
+			<h2 class="date">12 January 2019</h2>
+			<h3 class="author">Desolane updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Added burstfire and increased firerate to Modded DMR</li>
+				<li class="tweak">Increased firerate of the MA5B</li>
+				<li class="tweak">Decreased dispersion of the MA3</li>
+				<li class="tweak">Increased amount of pellets, step distance of pellets, and spread of pellets for buckshot</li>
+			</ul>
+			<h3 class="author">Stingray updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Adds a shipmaster role that can currently only be enabled for admins, due to it being whitelisted seperately from standard elites.</li>
+				<li class="rscadd">Enables dual-wielding for Spartans, Elites, and Orions on select weapons via a verb.</li>
+				<li class="tweak">Modifies Spartan speed, modifies Spartan and Elite pain resistance.</li>
+				<li class="bugfix">Disables the announcer, and prevents the covenant from appearing on consoles such as medical records.</li>
+			</ul>
+
+			<h2 class="date">06 January 2019</h2>
+			<h3 class="author">Cael_Aislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fix hunter immortality.</li>
+			</ul>
+			<h3 class="author">erty80s updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Glassing canon, plasma loader, energy fire control and plasma batteries.</li>
+				<li class="maptweak">Adds glassing canon.</li>
+				<li class="bugfix">Covenant jobs fix.</li>
+			</ul>
+
+			<h2 class="date">31 December 2018</h2>
+			<h3 class="author">Cael_Aislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="maptweak">The SDV Vindicative Infraction now has a proper drone hive.</li>
+				<li class="maptweak">The SDV Vindicative Infraction now has Covenant Type-55 IBC drop pods (sprites by Kozi32).</li>
+				<li class="imageadd">Fixes the smooth wall bug with Covenant nanolaminate walls.</li>
+			</ul>
+
+			<h2 class="date">29 December 2018</h2>
+			<h3 class="author">Cael_Aislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Unggoy spawn with methane tanks again in First Contact.</li>
+				<li class="bugfix">Fixed a dispersion bug with the Innie M392 DMR.</li>
+				<li class="tweak">Mgalekgolo must now be crouched to fire. While crouched, movement and turning is restricted.</li>
+				<li class="maptweak">Removes the pocket of vacuum when mining underground on KS7.</li>
+				<li class="maptweak">Miners on KS7 can no longer tunnel through to space. Also rebalances mineral distribution on KS7 slightly.</li>
+			</ul>
+
+			<h2 class="date">28 December 2018</h2>
+			<h3 class="author">Cael_Aislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fixes landmines and disables landmine frisbee.</li>
+				<li class="rscadd">Adds cotton seeds to grow for cloth.</li>
+				<li class="tweak">Doisac gas collectors should work a bit more intuitively now. Also reduces gas moles needed per packet down to 150.</li>
+				<li class="tweak">Re-enables smoke on Doisac geysers (some of it is poison so watch out!). This is a potential source of lag so keep an eye on it.</li>
+				<li class="bugfix">Fixes autosurgeon torture machine.</li>
+				<li class="maptweak">Clanless Jiralhanae should find it a bit easier to survive the wilds of Doisac.</li>
+				<li class="bugfix">STAIRS!!!!!!!!!!</li>
+			</ul>
+
+			<h2 class="date">27 December 2018</h2>
+			<h3 class="author">Cael_Aislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="experiment">Pack War gamemode is now live. Thanks to everyone who helped with the testing.</li>
+				<li class="wip">New furry friends have been added to the server. They come with all their own bladed, explosive toys.</li>
+				<li class="tweak">Radio code has been partially rewritten for easier maintenance.</li>
+				<li class="imageadd">Covenant medical and engineering tools have been added (resprites). Also adds Brute weapons and gekz (Covenant currency).</li>
+				<li class="maptweak">Several mysterious new ores should be spawning in the mines now...</li>
+				<li class="spellcheck">The Sangheili language is now extra incomprehensible.</li>
+				<li class="bugfix">NPCs should die properly now. No more floating invisible clothes.</li>
+				<li class="tweak">Changes how grunt gear is handled.</li>
+				<li class="tweak">Pickaxes now have durability and will need to be repaired.</li>
+				<li class="experiment">NPC traders should now accept coins and sheets/bars in trade. Expect bugs or unexpected with sheets/bars so be careful.</li>
+			</ul>
+			<h3 class="author">Stingray updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fixed internal energy daggers not deploying correctly on the left hand</li>
+				<li class="bugfix">Fixed internal energy daggers not having any armour penetration</li>
+				<li class="bugfix">Fixed elite swords playing both their own sound and the default energy sword sound on activation</li>
+			</ul>
+
+			<h2 class="date">24 November 2018</h2>
+			<h3 class="author">erty80s updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Added medical ship member job.</li>
+				<li class="rscadd">Added medical ship captain job.</li>
+			</ul>
+
+			<h2 class="date">08 November 2018</h2>
+			<h3 class="author">Ingredients updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="imageadd">Added in a few files to include a few different colors for Orion Armor</li>
+				<li class="tweak">Changed Normal Orion Armors to incorporate different colors and delted Orion Armor in Gem City.</li>
+				<li class="tweak">Added in Theta race which is not in use yet for Theta project use at a later date.</li>
+				<li class="maptweak">Created a Cash Vault full of money for ONI to utilize if possible.</li>
+				<li class="tweak">More money is now available in the briefcases found inside ONI for commercial use.</li>
+				<li class="maptweak">Added in a single ATM into Exo research 1 barracks for Researcher and Soldier use if needed.</li>
+				<li class="tweak">Deleted second set of surgery toold in Autopsy lab, added in a sink in an open spot instead as it is needed for surgery.</li>
+			</ul>
+			<h3 class="author">Koenigsegg updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Added security room and gear in the CCV Deliverance</li>
+				<li class="rscdel">Removed a few shutters at the rear of the CCV Deliverance</li>
+				<li class="rscadd">Added a few medic lockers to the CCV Deliverance</li>
+				<li class="rscadd">Added the includes to... include the CCV Deliverance to FC. Yay.</li>
+				<li class="rscadd">Added 2 hand labeler in the Bertels chemistry room. About time.</li>
+			</ul>
+			<h3 class="author">Unknown updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="maptweak">Switched over all ships to the new engine system.</li>
+				<li class="rscadd">Finishes up the UNSC Aegis 2.0 design.</li>
+				<li class="rscadd">Simplemob tweak.</li>
+				<li class="rscadd">Icon change in closet.dmi, added extra state.</li>
+				<li class="rscadd">Adds an ONI ID Badge type.</li>
+				<li class="rscadd">Adds 4 new whitelisted jobs for ONI crew and ODST troopers for UNSC Aegis.</li>
+				<li class="rscdel">Removed superfluous backup files.</li>
+			</ul>
+			<h3 class="author">XO-11 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Added the ability for all weapons to parry other melee attacks. Energy weapons will slice through other objects when parrying. Parry chance based on size of item.</li>
+			</ul>
+			<h3 class="author">erty80s updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Adds a different type of payload that detonates outside a detonation area.</li>
+				<li class="rscadd">Adds different types of explosions for different payloads and also made them deadlier.</li>
+				<li class="rscadd">Overmap objects now show damaged icons when bombarded enough times.</li>
+				<li class="rscadd">Adds the kig yar ranger suit.</li>
+				<li class="tweak">More objects can be carried up umbilicals.</li>
+				<li class="tweak">More objects can be stuffed in vehicles.</li>
+				<li class="tweak">MAC rounds make a bigger explosion when hitting a planet.</li>
+				<li class="bugfix">Fixed the bug where vehicles couldnt be attached to air vehicles.</li>
+				<li class="bugfix">Mechs can now go upstairs.</li>
+				<li class="bugfix">MAC rounds no longer hit random z-levels in planets and other overmap objects.</li>
+				<li class="imageadd">Added bombed icons for exoplanets.</li>
+				<li class="imageadd">Added kig-yar ranger suit sprites courtesy of Eluxor.</li>
+				<li class="tweak">The payload in ONI base can now be detonated anywhere.</li>
+				<li class="rscadd">Added the anti-matter bomb to the corvette which also explodes anywhere.</li>
+				<li class="rscadd">Added the kig yar ranger suit to the corvette.</li>
+			</ul>
+
+			<h2 class="date">23 September 2018</h2>
+			<h3 class="author">BDpuffy420 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Added new combat flood forms to the spawning list</li>
+				<li class="tweak">Fixed the small and large biomass sprites</li>
+			</ul>
+			<h3 class="author">CaelAislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Adds Ollanius's new Elite mob and gear sprites.</li>
+				<li class="soundadd">Adds new Covenant lobby music.</li>
+				<li class="rscadd">Adds Valmoric's animated Covenant chair.</li>
+				<li class="bugfix">Prophets and eswords both now die properly.</li>
+				<li class="tweak">Disables most vanilla SS13 gamemodes.</li>
+			</ul>
+			<h3 class="author">Flaksim updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscdel">Removed the CCV Comet.</li>
+				<li class="rscadd">Added the URFS Thorn, a captured UNSC patrolboat, now in URF hands.</li>
+				<li class="rscadd">Added the UNSC Yolotanker, ready to rain hell down on the URF stronghold of New New Antartica.</li>
+				<li class="rscadd">Added transparancy to ODST Visors, toggled with the VISR verb under the Helmet tab.</li>
+				<li class="rscadd">Adds 2 URF Pelicans with proper icons.</li>
+				<li class="tweak">Fixes Colossus and Zeal armor worn states.</li>
+				<li class="tweak">Fixes a misplaced APC, fixes several airlock acces levels in the URFS Thorn.</li>
+				<li class="tweak">Fixes misplaced magazines on UNSC Bertels and UNSC Yolotanker.</li>
+				<li class="tweak">Fixes non buildable SMES units on UNSC Bertels.</li>
+				<li class="tweak">Fixes standard ODST helmet VISR toggle.</li>
+				<li class="rscadd">Adds a covenant corvette.</li>
+				<li class="tweak">Adds a reagent mixer to asteroid base level 2.</li>
+				<li class="tweak">Fixes a misplaced wire on UNSC Bertels.</li>
+				<li class="tweak">Fixes a blast door ID error on ExoResearch1</li>
+			</ul>
+			<h3 class="author">Ingredients updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Minor item path change to get icon to show properly.</li>
+			</ul>
+
+			<h2 class="date">09 September 2018</h2>
+			<h3 class="author">CaelAislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Adds Covenant features: Prophets, Drones, Engineers, multitile airlocks (2, 3 and 4 tile), energy barricades, gravity lifts and much more.</li>
+				<li class="wip">Adds placeholder Covenant features: Banshee, Shadow APC, antimatter bomb, elite bed, pinch fusion reactor.</li>
+				<li class="bugfix">NPCs can be interacted with after the first time.</li>
+				<li class="tweak">Elite energy swords now have a toggleable failsafe. If they are dropped while active, they will self destruct.</li>
+				<li class="bugfix">Multitile airlocks now block sight properly.</li>
+			</ul>
+			<h3 class="author">Flaksim updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Remodel of Corvette, second deck added.</li>
+				<li class="maptweak">Added functional air sensors to Corvette.</li>
+				<li class="tweak">Made drop pods have a range of 3 tiles to enable flyby deployments.</li>
+				<li class="tweak">Added emergency voidsuits to emergency lockers.</li>
+				<li class="rscadd">Tweaks on the corvette.</li>
+				<li class="maptweak">Adds a new civilian outpost, Emsville to KS7. Along with a colonist role.</li>
+				<li class="tweak">Various small mapfixes.</li>
+				<li class="tweak">Added UNSC Marine role to the Thorin.</li>
+				<li class="maptweak">Significantly improves Emsville living quarters, cleans up minor map errors.</li>
+				<li class="maptweak">Added Escape Pods to every human vessel.</li>
+				<li class="tweak">Edited Weapons Smuggler tradelists.</li>
+				<li class="tweak">Added a new Corgi, Emelie for Emsville.</li>
+				<li class="maptweak">Adds 4 yan'me NPC's for defensive purposes.</li>
+				<li class="maptweak">Adds 2 Huragok, currently for decoration, eventually these will be automated fixers.</li>
+				<li class="maptweak">Added multitile Airlocks to the ship.</li>
+				<li class="maptweak">Improved engine protection.</li>
+				<li class="maptweak">Removed vulnerable phoron crates.</li>
+				<li class="maptweak">Added Unngoy sleeping nests.</li>
+				<li class="maptweak">Added Food Nipple.</li>
+				<li class="maptweak">Adds a crate containing covenant energy barricades (packed up for transport prior to deployment).</li>
+				<li class="maptweak">Adds Inflatable wall cases to UNSC Thorin storage rooms.</li>
+				<li class="rscadd">Adds an inflatable wall briefcase to Emergency Lockers.</li>
+				<li class="maptweak">Adds Proper equipment lockers to Elmsville Marshall's locker room.</li>
+				<li class="maptweak">Fixes geminus PD.</li>
+				<li class="maptweak">Updates some frigate areas.</li>
+				<li class="rscadd">Adds a hostage training scenario for ODST's.</li>
+				<li class="rscadd">Adds a brand new marine vessel, the UNSC Bertels.</li>
+				<li class="maptweak">Adds Various areas to UNSC Bertels based on player feedback.</li>
+				<li class="maptweak">Adds self contained spawnpoints for UNSC Bertels.</li>
+				<li class="rscadd">Adds documentation to UNSC Bertels map folder on how to implement the vessel in different scenarios.</li>
+				<li class="rscadd">Adds self contained job datums and outfit lists for UNSC Bertel.</li>
+				<li class="maptweak">UNSC Bertels: Adds a Morgue</li>
+				<li class="maptweak">UNSC Bertels: Fixes chembay airlocks.</li>
+				<li class="maptweak">UNSC Bertels: Switches central spinal rooms around on deck 2, meaning storage is closer to engineering and chemistry to medical.</li>
+				<li class="maptweak">UNSC Bertels: Adds administrative offices with medical instruction books, folder, pens, paperbins and filing cabinets for REPORTZZ.</li>
+				<li class="maptweak">UNSC Bertels: Adds medical records computers to the medbays.</li>
+				<li class="maptweak">UNSC Bertels: Fixes a missing staircase.</li>
+				<li class="maptweak">UNSC Bertels: Adds Intercomms throughout the ship.</li>
+				<li class="maptweak">UNSC Bertels: Adds a comms room on deck 3, the ship now has its own eband and general comm relays.</li>
+				<li class="maptweak">UNSC Bertels: Fixes broken Marine Spawns.</li>
+				<li class="maptweak">UNSC Bertels: Adds a holotable (navigation consoles) to Officer Mess Hall for ARREPEEEE.</li>
+				<li class="maptweak">UNSC Bertels: Fixes Medical Records Computers.</li>
+				<li class="maptweak">UNSC Bertels: Fixes UNSC HIGCOM fax line.</li>
+				<li class="maptweak">KIG-YAR Pirate Vessel: Adds Anesthetics to medbay.</li>
+			</ul>
+			<h3 class="author">Ingredients updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Changed wrong version of Orion Project gun spawning in Orion Closets.</li>
+			</ul>
+			<h3 class="author">XO-11 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Adds the BumbleBee escape pod.</li>
+				<li class="rscadd">Adds a boarding-varient of the BumbleBee.</li>
+				<li class="tweak">Tweaks the parameters for valid-drop-turf selection.</li>
+				<li class="rscadd">Adds an overmap-weapon: Boarding Beacon Launcher. Fires short-lived beacons that allow pod landing in their areas.</li>
+			</ul>
+
+			<h2 class="date">12 August 2018</h2>
+			<h3 class="author">Cael_Aislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="maptweak">Places various NPCs around Geminus Colony, the Mining Station and the Innie Base to make them feel lived in. Scattered around are NPC traders who will buy ore or crops for cash, as well as some disguised colonists who are actually black market weapons smugglers.</li>
+			</ul>
+			<h3 class="author">Flaksim updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Added the HRUNTINGYGGDRASIL Mark I ADS Mech</li>
+				<li class="maptweak">Added an upper level to Exoresearch. Improved facility defenses.</li>
+				<li class="maptweak">Added a mech lab and testing site to Exoresearch.</li>
+				<li class="maptweak">Repurposed Listening Post with a URF facility</li>
+				<li class="maptweak">Removed Outer Colony from map rotation.</li>
+				<li class="bugfix">Fixes minor mapping errors on various maps.</li>
+				<li class="bugfix">Fixes Fuel Depot Elevator.</li>
+				<li class="rscadd">Added ODST Donator Variants.</li>
+				<li class="maptweak">Fixed gravity and power issues on Geminus (Someone forgot areas when mapping new things in...)</li>
+				<li class="rscdel">Cleaned up map folders to get rid of outdated and horribly broken maps.</li>
+				<li class="bugfix">Implemented XO-11's movement fix.</li>
+				<li class="tweak">Rounded out items here and there, nothing major, this update is mostly fixing little things and step 1 in src reorganization.</li>
+			</ul>
+			<h3 class="author">Ingredients updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Changed Colossus and Zeal armor Stats to prevent speed boost while not wearing armor. Gave Zeal armor half normal armor thickness so it can it will be more useful when under bullet fire.</li>
+				<li class="tweak">Fixed a few typos I saw in descriptions.</li>
+				<li class="tweak">Added in Chem and Tracking Implant and Implanter into freezer. Added in pinpointers to use with tracker Implant.</li>
+				<li class="tweak">Updated Project Orion Envelope with details for new map. Added in Orion Code envelope to the corvette as well just in case it is used in game.</li>
+				<li class="tweak">Updated Orion Armor Descriptions as they mentioned the Theta Project in them.</li>
+				<li class="tweak">Added in an Autopsy scanner to the Morgue of Exo3.</li>
+				<li class="tweak">Removed Deconstructer and Circuit printer from Exo3. No point in having duplicates. Replaced with Some extra ammo boxes and more tables. Added in monkey cubes for live fire test subjects.</li>
+				<li class="tweak">Added in some vials for use with the Isolation machine.</li>
+				<li class="imageadd">New floorsigns for medical.</li>
+				<li class="tweak">Changed Theta project names to Project Orion for guns and armor.Removed Code to deflect bullets from armor and helmet as it wasn't working. Added in code for all Theta Armor to species restrict armor.</li>
+				<li class="tweak">Armor thickness is now only on helmet and armor pieces. Undersuit no longer provides armor values.</li>
+				<li class="tweak">Added in Orion Project Race called Orion which Admins will have to manually set once proper RP is done ICly to create project Orion. Added in armor race restrictions so it can only be worn once race is set by an admin.</li>
+				<li class="imageadd">Added a modded Icon, MA9 gun into Weapon sprites.dm, changed the Orion Project Icon gun to use the MA9. Changed weight class from huge to large.</li>
+				<li class="maptweak">Added in Chemistry station to Exo3.</li>
+				<li class="maptweak">Removed random project theta Labratory hidden in rocks of Exo-research 2. Removed old project theta lab in Gem City RnD</li>
+				<li class="tweak">Fixed Orion Species Path so they can now wear their armor properly.</li>
+				<li class="tweak">Deleted three spare undersuits in orion closets as they were redundant.</li>
+				<li class="tweak">Changed the name of the Colossus Case to help it blend in better while holding it. Changed wrong code to make it so it can only hold colossus armor inside.</li>
+				<li class="tweak">Removed custom attack code for Orions.</li>
+				<li class="tweak">Added in Orion Datum so admins can easily change the race in game</li>
+				<li class="tweak">Slightly improved Orion unarmed damage and block factor</li>
+				<li class="tweak">Orion race buffs give 20 additional hp, slight pain tolerance, and temperature tolerance.</li>
+				<li class="tweak">Replaced dufflebags with normal ODST backpacks for the time being as the previous ones were not usable.</li>
+				<li class="tweak">Added in a few medical storage belts in chem storage in exoresearch3.</li>
+				<li class="tweak">Replaced pinpointers with GPS for tracking implants.</li>
+				<li class="tweak">Added in three cash briefcases for Oni to use to procure additional materials for labs.</li>
+				<li class="tweak">Added in random clothes sets on Innie ship. Some random materials as well.</li>
+				<li class="tweak">Random weapon and ammo spawns were added in as well to the innie ship.</li>
+				<li class="tweak">A few static goodies were spread around the ship as well.</li>
+				<li class="tweak">Added in two new types of armors, the Colossus Armor and the Zeal Scout Suit. Made a case which can carry the colossus armor.</li>
+				<li class="maptweak">Added in a new room to house the two new armor types.</li>
+				<li class="tweak">Added in random clothes sets in Innibase3 Laundry room and Eastern Storage.</li>
+				<li class="tweak">Added in a small assortment of old guns with a bit of ammo into the ammo crates Inniebase3 north storage. Added in a few sets of armor vests.</li>
+				<li class="tweak">Added in randomised misc items to Eastern and Northern Storage in Inniebase2. Should help with blending in with civies if they want to go incognito. Added in a emergency rations freezer as well.</li>
+				<li class="tweak">Added in a few old style guns to the weapons crates in Northern Storage Inniebase2.</li>
+				<li class="tweak">Added in some merc armor and helmets into northern Storage Inniebase2.</li>
+				<li class="tweak">Added in a secure briefcase with money inside of it in the hidden office in eastern maint in Inniebase2. Also added in a case of cigars.</li>
+				<li class="tweak">Added barricades over the grills on Inniebase1 to make it more difficult to enter through vents.</li>
+			</ul>
+			<h3 class="author">bloxgate updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="maptweak">The Kig-Yar Ship has a shield generator in Engineering</li>
+				<li class="experiment">The Kig-Yar ship is now powered by a Subspace-Fractal reactor. Its power output is limited to a max of 1MW</li>
+				<li class="bugfix">Incoming fire now spawns outside the Kig-Yar ship</li>
+			</ul>
+
+			<h2 class="date">20 June 2018</h2>
+			<h3 class="author">Cael_Aislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Random ore veins should now spawn correctly.</li>
+				<li class="maptweak">Changed mineral spawn % distribution north of Geminus City, changed the sand deposits to dirt</li>
+				<li class="experiment">Mappers can now more easily see the mineral spawn % distribution in the map editor.</li>
+				<li class="wip">Adds NPCs with basic speech interaction system.</li>
+				<li class="wip">Adds NPC traders for ore, hydroponics produce and black market weapons.</li>
+				<li class="imageadd">Adds Mark V Mjolnir Armour and several variants.</li>
+				<li class="tweak">Removes turfs global list to speed up server startup.</li>
+			</ul>
+			<h3 class="author">Desolane updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">reduced damage threshold of ODST general attire making them not invincible</li>
+				<li class="tweak">reduced damage threshold of Marine general attire and gave marine armor a holster</li>
+				<li class="spellcheck">fixed a plethora of typos across multiple items</li>
+				<li class="tweak">marine armor vendors now carry gloves</li>
+				<li class="tweak">CH252 Helmet alternate variant is now the CH252-V Helmet and marine uniforms now spawn with dogtags</li>
+			</ul>
+			<h3 class="author">Desolane900 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">added the modified Insurrectionist DMR</li>
+				<li class="rscadd">adjusted fire rate of the M392 DMR</li>
+			</ul>
+			<h3 class="author">Flaksim updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="maptweak">Adds working comms to UNSC Frigate.</li>
+				<li class="maptweak">Interior remodel of the CCV Slow But Steady.</li>
+				<li class="maptweak">Added drop pod markers where they were missing.</li>
+				<li class="maptweak">Expands Geminus to 3 Z levels.</li>
+				<li class="maptweak">Adds an aditional level to exoresearch, for Orion Project research.</li>
+				<li class="maptweak">Adds comms equipment to innie base, geminus city.</li>
+				<li class="bugfix">Links Listening post Z levels correctly once more.</li>
+				<li class="bugfix">Minor fixes to UNSC Prowler and UNSC Frigate.</li>
+				<li class="maptweak">Remodeled frigate deck 4 to facilitate readding ODST's.</li>
+				<li class="rscdel">Removed ODST spawns on prowler.</li>
+				<li class="rscadd">Added ODST spawns to frigate.</li>
+				<li class="rscadd">Added all First Contact jobs and spawns to colony gamemode.</li>
+				<li class="rscadd">Changed ONI Bridge Officer to ODST Officer.</li>
+				<li class="bugfix">Fixes ODST Officer acces level for colony gamemode.</li>
+				<li class="bugfix">Temporary fix for the way spawns and jobs are handled in colony mode, pending full rework.</li>
+				<li class="maptweak">Remodel of the kig-yar vessel interior.</li>
+				<li class="maptweak">Added a medical bay to the kig-yar vessel.</li>
+				<li class="maptweak">Added 6 deck guns and 2 archer pods to the frigate.</li>
+				<li class="bugfix">Temporarily removed methane den atmosphere pending solid fix for atmos issues.</li>
+				<li class="maptweak">Reworked Kig-Yar engines (369 max thrust baby!)</li>
+				<li class="maptweak">Fixed a small piping error on the UNSC Corvette engines.</li>
+				<li class="maptweak">Made the ID required for the covenant fax easier to find.</li>
+				<li class="maptweak">Replaced the frigate fuel pumps with pumps that are activated on round start (like all other ships have already), removes the bothersome startup procedure and acces problems.</li>
+				<li class="tweak">Updated kig-yar ship icon to reflect recent interior remaps on overmap icon.</li>
+				<li class="tweak">Fixed sloppyness in the spawnpoint override coding for ODST roles.</li>
+				<li class="maptweak">Added an elevator between deck 2 and MAC controls on the frigate.</li>
+				<li class="maptweak">Added a "supraluminal communications array" (fax) to the Kig-Yar bridge.</li>
+				<li class="bugfix">Fixed deck gun and archer gun controls on the frigate.</li>
+				<li class="bugfix">Fixed Kig-Yar vessel engines and connector port for refueling.</li>
+				<li class="experiment">Changed Sangheili language colour to "vox" entry.</li>
+			</ul>
+			<h3 class="author">Ingredients updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Changed Theta Project Armor to a cooler looking armor set.</li>
+				<li class="tweak">Theta armor should be capable of holding most weapons in its suit slot.</li>
+				<li class="tweak">Gave the theta project closet a bullpup rifle and three mags to equip their creation, or be killed by it.</li>
+				<li class="tweak">The armor gives a slight boost to walk speed.</li>
+				<li class="tweak">Theta Undersuit was replaced and now will actually work.</li>
+				<li class="tweak">Slightly Changed Theta Project equipment names so they arn't so long.</li>
+				<li class="tweak">Decreased armor in Theta Arm Guards. Decreased armor from Theta Boots to be more in line with the Arm Guards.</li>
+				<li class="tweak">Made armor thicker on Theta armor to facilitate longer usage time and to offset no shields.</li>
+				<li class="tweak">Added slight armor thickness to Gloves, Boots and undersuit</li>
+				<li class="tweak">Minimum breath pressure halved for augmented lungs. Slightly increased lung max damage because it was formally at the native damage levels</li>
+				<li class="tweak">Added descriptions to all the augmented organs.</li>
+				<li class="experiment">Theta Armor and Theta Helmet given a chance to deflect bullets for no damage.</li>
+				<li class="experiment">Added in the All Purpose Carbine for use with the Theta Project.</li>
+			</ul>
+
+			<h2 class="date">04 June 2018</h2>
+			<h3 class="author">BDpuffy420 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">More Ship names to the NPC list</li>
+				<li class="rscadd">Expanded the overmap to 60 like in First Contact</li>
+				<li class="rscadd">Ported many overmap places to Colony</li>
+				<li class="tweak">Changed the mining colony colonist role to Outer Colonist</li>
+				<li class="rscadd">Placed two more overmap ship icon down</li>
+			</ul>
+			<h3 class="author">Desolane900 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">added the MA3 assault rifle</li>
+				<li class="rscadd">changed canister health to double of what it was</li>
+				<li class="rscadd">changed a few weapon and magazine descriptions</li>
+				<li class="rscadd">added 5.56mm and 9mm to ammo fabricators</li>
+				<li class="rscadd">returned the Battle Rifle to it's glory days</li>
+				<li class="rscadd">increased the fire rate of the LMG</li>
+			</ul>
+			<h3 class="author">DoctorOctopus updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="experiment">To the new players reading this, our development is extremely active just really bad at doing changelogs. Check our github for real-time updates.</li>
+				<li class="rscadd">Adds a hat, and eyeglass section to the loadout.</li>
+				<li class="rscadd">Codes, Sprites, and Implements an ONI Badge, badge will be given to all ONI Staff.</li>
+				<li class="rscadd">(most of) Nanotrasen has been phased out, replaced with http://halo.wikia.com/wiki/Misriah_Armory , an armaments manufacturer.</li>
+				<li class="tweak">Changes all sprites to be MA Themed, renames all NT Objects</li>
+			</ul>
+			<h3 class="author">XO-11 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Brings nanolaminate-strength in line with material's lore-superiority over normal steel/reinforced plas-steel.</li>
+			</ul>
+			<h3 class="author">bloxgate updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="maptweak">Adds lots of firelocks to the UNSC Corvette</li>
+			</ul>
+
+			<h2 class="date">28 May 2018</h2>
+			<h3 class="author">Cael_Aislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Resolved various bugs with lighting and other things on Stranded.</li>
+			</ul>
+			<h3 class="author">DoctorOctopus updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Makes R&D more halo-lore friendly.</li>
+				<li class="rscadd">Removes the items that got it mapped out in the first place, no more laser guns.</li>
+				<li class="maptweak">Mine cordoned off for safety reasons.</li>
+				<li class="maptweak">Geminus City has had its nuclear weapons removed after concerns brought up by ONI.</li>
+				<li class="maptweak">Slums given fronts in which illegal business can be conducted as though it is legal.</li>
+				<li class="maptweak">Dead ends in slums increased.</li>
+				<li class="maptweak">Project Theta instituted with Lore Master The Pillow's Approval.</li>
+				<li class="experiment">Research and Development has been restored to GC's Science Bay.</li>
+				<li class="maptweak">GCPD Armory remodeled, made more secure, organized.</li>
+				<li class="maptweak">GCPD Storage Room emptied and refilled with various storage-related items.</li>
+				<li class="maptweak">Redesigns the Detective's Office.</li>
+				<li class="maptweak">Redesigns the Forensic Scientist's Lab, adds a morgue, full lab, ect.</li>
+				<li class="rscadd">Adds a new GCPD Officer Alt-Title, GCPD Forensic Scientist.</li>
+				<li class="bugfix">Fixed a few bugs for Desolane.</li>
+			</ul>
+			<h3 class="author">Nalar updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Announcements generated via admins or the communications console can now be heard by characters in-game.</li>
+				<li class="bugfix">New arrivals for UNSC and the colony are now announced.</li>
+				<li class="rscadd">The more commonly used radio channels now have different colours!</li>
+				<li class="rscadd">New arrivals for ODST now announced.</li>
+				<li class="tweak">The CO now has access to TACCOM for coordination between the marines and ODST.</li>
+				<li class="tweak">The CO, Bridge Officer, ONI Bridge Officer and XO now all have access to FLEETCOM to allow for greater coordination.</li>
+				<li class="tweak">The overmap now shows the UNSC Heavens Above rather than UNSC Frigate.</li>
+				<li class="tweak">The arrivals message now refers to the Heavens Above by name, instead of UNSC Frigate.</li>
+				<li class="bugfix">The covenant battlenet is now coloured, and is the same colour as TACCOM.</li>
+				<li class="bugfix">Communications consoles and faxes now have the correct option to message United Nations Space Command/UNSC HIGHCOM (admins)</li>
+				<li class="bugfix">Fax machines in the COs quarters and command areas are now correctly named.</li>
+				<li class="bugfix">Announced arrivals now correctly state which place new arrivals arrive at.</li>
+				<li class="rscadd">Adds a private ODST channel called TACCOM so ODSTs and ONI can coordinate better.</li>
+				<li class="bugfix">Bullets now do significantly less damage to walls.</li>
+			</ul>
+			<h3 class="author">Nalar & XO-11 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fixes department comms keys. Rejoice! No longer will :h be the one true saviour of private communication!</li>
+			</ul>
+
+			<h2 class="date">28 March 2018</h2>
+			<h3 class="author">DoctorOctopus updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="maptweak">Added firelocks to the USNC Frigate. Tell me if a firelock borked.</li>
+				<li class="maptweak">Added air alarms to the USNC Frigate. Tell me if I missed a room.</li>
+				<li class="maptweak">Created a Casino in the slums for all your gambling needs.</li>
+				<li class="maptweak">Created a Crime Scene in the slums because its a scary place.</li>
+				<li class="maptweak">Completed the Science biohazard lockdown system.</li>
+				<li class="maptweak">Made the MAC Cannon more secure, remodeled MAC Checkpoint.</li>
+				<li class="maptweak">Remodeled the Hospital Chemistry Lab.</li>
+				<li class="rscadd">Added another Mongoose to City Hall.</li>
+				<li class="maptweak">Tiny remodel to the Slums Armory - Made it so you can put things in the display windows.</li>
+				<li class="rscadd">Added some cleaning supplies in the hospital.</li>
+				<li class="maptweak">Added a button inside the Police Armory so people stop locking themselves in.</li>
+				<li class="rscadd">Each UNSC role has been given a rank which will equip automatically (thanks to xo's god coding) as soon as they spawn.</li>
+				<li class="maptweak">Small remodel of the UNSC Bridge, added lockdown system and fax machine, added new items to CO's Office, revamped gun room.</li>
+				<li class="maptweak">Made it so Frigate Power lasts way longer and doesn't die out in like ten minutes.</li>
+				<li class="maptweak">Renovated all deck two gun rooms.</li>
+				<li class="maptweak">Added a medvend, box of body bags, defib, and a morgue to the UNSC Medbay.</li>
+				<li class="experiment">Added Protocol 098831A-1 Room</li>
+				<li class="rscadd">Ported Bay's Nuclear Authentication System and Folders</li>
+				<li class="tweak">All helmets and vests now say UEG, United Earth Government, or UNSC and no longer say Sol Central, SOL, SOL CENTRAL GOVERNMENT.</li>
+				<li class="rscadd">Based on a lore request Marine Commanding Officer has been renamed to Marine Company Officer</li>
+				<li class="rscadd">Based on a lore request Marine Executive Officer has been renamed to Marine Gunnery Sergeant</li>
+				<li class="rscadd">Based on a lore request Naval Security Officer and Masters-At-Arms have switched places, NSO is now the Head, MAA is now the Officer</li>
+			</ul>
+			<h3 class="author">Terror4000rus updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="maptweak">Insurrection Base's engineering section was upgraded. Explosion of generators will not cause decompression and power failure.</li>
+			</ul>
+
+			<h2 class="date">25 March 2018</h2>
+			<h3 class="author">DoctorOctopus updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="maptweak">Revamped ODST Locker Room</li>
+				<li class="rscadd">Added ODST Vendors</li>
+				<li class="rscadd">Added SecTech vendors to the UNSC Frigate's Brig</li>
+				<li class="rscadd">Added more loadout options when creating a character.</li>
+				<li class="tweak">Changed auto-CT vote to call at two hours instead of three.</li>
+				<li class="experiment">Removed secret from the gamemode vote.</li>
+				<li class="rscadd">Replaces the NT Vest in Naval Security Officers lockers with a NSO Vest.</li>
+			</ul>
+			<h3 class="author">bloxgate updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Enhanced liver for Spartans. Handles radiation and some toxins better.</li>
+				<li class="rscadd">Enhanced eyes for Spartans. Better protection from some blinding effects.</li>
+				<li class="tweak">Spartan's hearts can take more damage than normal humans.</li>
+				<li class="tweak">Spartans have a greater temperature tolerance.</li>
+				<li class="experiment">Spartans are more insulated than regular humans.</li>
+				<li class="bugfix">Spartans now have their player ages restricted to a lore-friendly range.</li>
+			</ul>
+
+			<h2 class="date">24 March 2018</h2>
+			<h3 class="author">DoctorOctopus updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="maptweak">Added firelocks to the USNC Frigate. Tell me if a firelock borked.</li>
+				<li class="maptweak">Added air alarms to the USNC Frigate. Tell me if I missed a room.</li>
+				<li class="maptweak">Created a Casino in the slums for all your gambling needs.</li>
+				<li class="maptweak">Created a Crime Scene in the slums because its a scary place.</li>
+				<li class="maptweak">Completed the Science biohazard lockdown system.</li>
+				<li class="maptweak">Made the MAC Cannon more secure, remodeled MAC Checkpoint.</li>
+				<li class="maptweak">Remodeled the Hospital Chemistry Lab.</li>
+				<li class="rscadd">Added another Mongoose to City Hall.</li>
+				<li class="maptweak">Tiny remodel to the Slums Armory - Made it so you can put things in the display windows.</li>
+				<li class="rscadd">Added some cleaning supplies in the hospital.</li>
+				<li class="maptweak">Added a button inside the Police Armory so people stop locking themselves in.</li>
+			</ul>
+			<h3 class="author">Terror4000rus updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="maptweak">Insurrection Base's engineering section was upgraded. Explosion of generators will not cause decompression and power failure.</li>
+			</ul>
+			<h3 class="author">XO-11 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Adds an umbilical system to allow for transfer between overmap objects without the use of vehicles.</li>
+				<li class="rscadd">Adds two umbilicals to the frigate, replacing the previous airlocks on deck 2 midship. Airlocks moved to Eastmost section of Hangar Bays.</li>
+				<li class="rscadd">Adds a "space elevator" umbilical to Geminus Colony to allow for non-pelican transport between the frigate and colony.</li>
+			</ul>
+
+			<h2 class="date">12 March 2018</h2>
+			<h3 class="author">Cael_Aislinn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="wip">Adds Stranded gamemode. Your UNSC ship has crashed landed on an abandoned alien world and now must fend off waves of Flood until your evacuation Pelican arrives!</li>
+				<li class="wip">Scavenge resources from your environment and build a base to hold them off.</li>
+				<li class="maptweak">Stranded desert outpost map</li>
+				<li class="rscadd">Adds new buildable structures: tank trap, barbed wire, sandbags</li>
+				<li class="tweak">Adds an atom despawner (testing)</li>
+				<li class="wip">Adds an experiement ambient lighting system (testing)</li>
+				<li class="soundadd">Adds flyby and crash SFX for Stranded gamemode.</li>
+				<li class="wip">Adds UNSC landmines to Stranded mode.</li>
+				<li class="experiment">Reworks material recipes. They should be more restricted now (no more cloth blades!).</li>
+				<li class="bugfix">Spent bullet casings should now be scattered around the turf randomly again.</li>
+				<li class="bugfix">Should fix the annoying dark spots on Stranded gamemode.</li>
+				<li class="tweak">Stranded now scales up the Flood spawn rate with the player count, it should be significantly harder.</li>
+				<li class="maptweak">Adds several flavours of unsimulated turfs for mappers to play with.</li>
+				<li class="tweak">Re-enables crafting of various structures and items for Geminus Colony and Insurrection gamemodes.</li>
+				<li class="wip">Adds periodic resupply drops to Stranded. Weapons, medical supplies, resources and ship debris can all come crashing down from orbit around the map.</li>
+				<li class="wip">Adds back in the day night cycle to Stranded. When it gets dark, you better have a source of light...</li>
+				<li class="wip">Adds deployable landmines to the UNSC arsenal. Watch that friendly fire!</li>
+				<li class="bugfix">Fixes some sprite issues with marine gear.</li>
+				<li class="imageadd">Placeholder sprites are in place for landmines and some flood stuff.</li>
+			</ul>
+			<h3 class="author">XO-11 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">The UNSC has detected an insurrection-hijacked craft touching down near the colony of Far Isle...</li>
+				<li class="rscadd">The UNSC forces have recieved new supplies in the form of fragmentation grenades and nuclear payload locators.</li>
+			</ul>
+
+			<h2 class="date">28 November 2017</h2>
+			<h3 class="author">Nightspark43 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Made base SS13 gamemodes except for Secret and Extended unvotable.</li>
+				<li class="bugfix">Made base SS13 languages, as well as the Sangheili language Restricted, making humans unable to select them.</li>
+			</ul>
+
+			<h2 class="date">24 November 2017</h2>
+			<h3 class="author">XO-11 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Adds manually controllable turrets.</li>
+				<li class="tweak">Insurrectionists have raided a transport ship containing new munitions...</li>
+				<li class="rscadd">Insurrectionists have finally decided who is leading them.(Insurrectionist Leader Job)</li>
+				<li class="tweak">Scopes should be funtional now, alongside some inhands.</li>
+			</ul>
+
+			<h2 class="date">19 October 2017</h2>
+			<h3 class="author">XO-11 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">A new insurrection gamemode, featuring insurrectionist defenders and ODST assault troops.</li>
+				<li class="rscadd">Adds biofoam syringes</li>
+				<li class="tweak">Fixes the sprite of UNSC medikits and changes their contents to include biofoam syringes</li>
+				<li class="tweak">Changes the sprite for spartan armor to a new version.</li>
+			</ul>
+
+			<h2 class="date">06 September 2017</h2>
+			<h3 class="author">Cael_Aislinn and XO-11 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="wip">Brings over XO-11's Slayer and Team Slayer gamemodes, with some rewrites.</li>
+				<li class="imageadd">Adds Halo lobby screens.</li>
+				<li class="soundadd">Adds Halo lobby music.</li>
+				<li class="imageadd">Fixes some (but not all) nonworking Halo gear.</li>
+				<li class="maptweak">Brings over the Insurrection slayer map as 'Death Asteroid'.</li>
+			</ul>
+			<h3 class="author">Earthcrusher updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">The electrified arm (e-magged/traitored Engineering borg module) now behaves like a stun baton. It can be toggled on/off.</li>
+				<li class="tweak">Activating the electrified arm will now cause the borg to glow a faint blue, giving away that they are using it.</li>
+				<li class="imageadd">Added a unique sprite for the electrified arm.</li>
+			</ul>
+			<h3 class="author">Kelenius updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Pulling a knife out of your boot or putting it in no longer makes a message.</li>
+			</ul>
+			<h3 class="author">Minijar updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Adds atmospheric systemst the rust chamber</li>
+				<li class="bugfix">fixes the rust airlock</li>
+				<li class="bugfix">Removes accidental vacuum flooring</li>
+			</ul>
+			<h3 class="author">XO-11 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Slayer spartan suits now have shields and a simple system to monitor the charge level.</li>
+				<li class="rscadd">Slayer auto-kills people after a certain threshold. No more waiting to bleed out.</li>
+				<li class="rscadd">Slayer also now auto-allows respawn for ghosts each 30 seconds.</li>
+				<li class="tweak">Tweaks guns so reload and fire sounds are now played.</li>
+				<li class="tweak">Needlers now have a higher chance to embed, even through shields. Damage has been lowered to compensate.</li>
+				<li class="tweak">Slayer spartan suits now have a way to dispense medical syringes.</li>
+			</ul>
+			<h3 class="author">bloxgate updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Update changelog templates for Halostation</li>
+				<li class="bugfix">Fix servername in world.dm</li>
+			</ul>
+			<h3 class="author">dryerlint updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Added ability to put paper bundles directly into paper bins and nano-printers.</li>
+				<li class="rscadd">Clicking on paper while holding a paper bundle now adds the paper onto the bundle.</li>
+				<li class="rscadd">Added new type of crate - the paper refill crate - filled with 30 blank papers. Intended to be used for refilling bins and printers.</li>
+				<li class="maptweak">Placed paper refill crate in Deck 1 Maintenance near the Conference Room.</li>
+			</ul>
+		</div>
+
+<b>GoonStation 13 Development Team</b>
+	<div class = "top">
+	<b>Coders:</b> Stuntwaffle, Showtime, Pantaloons, Nannek, Keelin, Exadv1, hobnob, Justicefries, 0staf, sniperchance, AngriestIBM, BrianOBlivion<br>
+	<b>Spriters:</b> Supernorn, Haruhi, Stuntwaffle, Pantaloons, Rho, SynthOrange, I Said No<br>
+	</div>
+<br>
+<b>Baystation 12 Development Team</b>
+	<div class = "top">
+	<b>Code:</b> Abi79, Aryn, Cael_Aislinn, Ccomp5950, Chinsky, cib, CompactNinja, DopeGhoti, Erthilo, Hawk_v3, Head, Ispil, JoeyJo0, Lexusjjss, Melonstorm, Miniature, Mloc, NerdyBoy1104, PsiOmegaDelta, SkyMarshal, Snapshot, Spectre, Strumpetplaya, Sunfall, Tastyfish, Uristqwerty<br>
+	<b>Sprites:</b> Apple_Master, Arcalane, Chinsky, CompactNinja, Deus Dactyl, Erthilo, Flashkirby, JoeyJo0, Miniature, Searif, Xenone, faux<br>
+    <b>Sounds:</b> Aryn<br>
+	</div>
+<br>
+<p class="lic"><a name="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img src="88x31.png" alt="Creative Commons License" /></a><br><i>Except where otherwise noted, Goon Station 13 is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-Noncommercial-Share Alike 3.0 License</a>.<br>Rights are currently extended to <a href="http://forums.somethingawful.com/">SomethingAwful Goons</a> only.</i></p>
+<p class="lic">Some icons by <a href="http://p.yusukekamiyamane.com/">Yusuke Kamiyamane</a>. All rights reserved. Licensed under a <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</a>.</p>
+</td></tr></table>
+</body>
+</html>
